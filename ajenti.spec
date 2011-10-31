@@ -6,11 +6,11 @@ Group:		Monitoring
 License:	LGPLv3
 Url:		http://ajenti.org
 BuildRequires:	python-devel
-BuildRequires:	fdupes python-lxml python-OpenSSL python-gevent
+BuildRequires:	fdupes python-lxml python-OpenSSL python-gevent python-imaging-devel
 Source:		%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 
-Requires:	python-OpenSSL python-lxml python-gevent python-setuptools
+Requires:	python-OpenSSL python-lxml python-gevent python-setuptools python-psutil python-imaging
 BuildArch:	noarch
 
 %description
