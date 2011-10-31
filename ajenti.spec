@@ -30,7 +30,7 @@ python setup.py build
 
 %install
 %{__python} setup.py install --single-version-externally-managed -O1 --skip-build --root=$RPM_BUILD_ROOT --prefix=/usr
-rm -r %{buildroot}/var/lib/%{name}/plugins/.placeholder
+#rm -r %{buildroot}/var/lib/%{name}/plugins/.placeholder
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -42,6 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/%{name}
 %{_sysconfdir}/init.d/%{name}
 %{python_sitelib}/*
+%{_var}/lib/%{name}/plugins/
 
 %post
 service ajenti start
