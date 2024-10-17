@@ -4,7 +4,7 @@ Release:	1
 Summary:	The admin panel you dreamed about has just arrived
 Group:		Monitoring 
 License:	LGPLv3
-Url:		http://ajenti.org
+Url:		https://ajenti.org
 BuildRequires:	python-devel python-setuptools
 BuildRequires:	fdupes python-lxml python-OpenSSL python-gevent python-imaging-devel
 Source0:	%{name}-%{version}.tar.gz
